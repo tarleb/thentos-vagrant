@@ -14,6 +14,12 @@ zlib:
       - zlib1g
       - zlib1g-dev
 
+pcre:
+  pkg.installed:
+    - pkgs:
+      - libpcre3
+      - libpcre3-dev
+
 cabal update:
   cmd.run:
     - user: vagrant
