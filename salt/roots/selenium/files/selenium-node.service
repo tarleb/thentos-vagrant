@@ -1,0 +1,12 @@
+[Unit]
+Description=Selenium Standalone Server
+Requires=selenium-hub.service
+After=selenium-hub.service
+
+[Service]
+Type=simple
+Environment=DISPLAY=:99
+ExecStart=/usr/bin/java -jar /usr/local/lib/jvm/selenium-server-standalone.jar -port 4452 -role node -hub http://localhost:4451/grid/register
+
+[Install]
+WantedBy=multi-user.target

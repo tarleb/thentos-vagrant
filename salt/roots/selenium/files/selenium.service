@@ -1,0 +1,12 @@
+[Unit]
+Description=Selenium Standalone Server
+Requires=xvfb@:99.service
+After=xvfb@:99.service
+
+[Service]
+Type=simple
+Environment=DISPLAY=:99
+ExecStart=/usr/bin/java -jar /usr/local/lib/jvm/selenium-server-standalone.jar
+
+[Install]
+WantedBy=multi-user.target
