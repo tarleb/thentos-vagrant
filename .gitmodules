@@ -1,0 +1,3 @@
+[submodule "thentos"]
+	path = thentos
+	url = https://github.com/liqd/thentos
