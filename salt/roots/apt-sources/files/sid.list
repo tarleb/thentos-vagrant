@@ -1,0 +1,3 @@
+# Debian Sid (i.e. Debian unstable)
+deb     http://ftp.de.debian.org/debian/ sid main
+deb-src http://ftp.de.debian.org/debian/ sid main

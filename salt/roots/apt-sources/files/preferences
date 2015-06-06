@@ -1,0 +1,7 @@
+Package: *
+Pin: release n=jessie
+Pin-Priority: 800
+
+Package: *
+Pin: release n=sid
+Pin-Priority: 600
