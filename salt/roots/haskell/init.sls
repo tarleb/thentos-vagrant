@@ -20,6 +20,9 @@ pcre:
       - libpcre3
       - libpcre3-dev
 
+happy:
+  pkg.installed
+
 cabal update:
   cmd.run:
     - user: vagrant
