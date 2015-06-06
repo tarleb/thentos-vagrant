@@ -1,3 +1,4 @@
 base:
   "*":
     - cli-utils
+    - haskell
