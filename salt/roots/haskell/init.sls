@@ -8,6 +8,12 @@ haskell:
     - requires:
       - pkg: apt-sources
 
+cabal update:
+  cmd.run:
+    - user: vagrant
+    - requires:
+      - pkg: haskell
+
 /etc/apt/preferences.d/haskell:
   file.managed:
     - source: salt://haskell/files/haskell.preferences
