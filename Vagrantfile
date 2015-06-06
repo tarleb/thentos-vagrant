@@ -23,8 +23,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   ## SYNCED FOLDERS
+  # Basics
   config.vm.synced_folder ".", "/vagrant", disabled: true
   config.vm.synced_folder "salt/roots/", "/srv/salt/", type: 'rsync'
+
+  # Thentos
+  config.vm.synced_folder "thentos/", "/home/vagrant/thentos/", type: "rsync"
+
 
   ## PROVISIONING
   config.vm.provision :salt do |salt|
