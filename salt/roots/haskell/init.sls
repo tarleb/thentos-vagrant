@@ -26,6 +26,8 @@ happy:
 cabal update:
   cmd.run:
     - user: vagrant
+    # Don't update if the last update was within the last 10 days
+    - unless: test -z "$(find ~vagrant/.cabal/packages/hackage.haskell.org/ -mtime +10 -name 00-index.\*)"
     - requires:
       - pkg: haskell
 
