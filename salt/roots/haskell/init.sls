@@ -8,6 +8,12 @@ haskell:
     - requires:
       - pkg: apt-sources
 
+zlib:
+  pkg.installed:
+    - pkgs:
+      - zlib1g
+      - zlib1g-dev
+
 cabal update:
   cmd.run:
     - user: vagrant
