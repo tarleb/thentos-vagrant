@@ -12,7 +12,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_download_checksum =
     "1853bfafc0c880cd25ba6dcfaed050d30828fba2d783098efb7778cd3ed97ef6"
 
-  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 7001, host: 7001
+  config.vm.network :forwarded_port, guest: 7002, host: 7002
 
   config.vm.provider :virtualbox do |vb|
     # GHC requires a bit more memory than the VM has by default.
